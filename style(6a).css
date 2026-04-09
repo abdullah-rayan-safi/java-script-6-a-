@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    transition: background 0.3s;
+}
+
+.navbar {
+    background-color: #007bff;
+    padding: 10px 0;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.logo {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.search-bar {
+    flex: 1;
+    margin: 0 30px;
+    position: relative;
+    max-width: 400px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 8px 35px;
+    border-radius: 20px;
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.search-bar i {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.offers {
+    color: #ff9f43 !important;
+}
+
+.mode-toggle {
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+body.dark-mode .navbar {
+    background-color: #1a1a1a;
+    border-bottom: 2px solid #007bff;
+}
+
+body.dark-mode {
+    background-color: #121212;
+}
+
